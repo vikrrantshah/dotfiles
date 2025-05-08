@@ -1,0 +1,5 @@
+font-family = Cascadia Code
+font-style = Bold
+theme = tokyonight_moon
+cursor-style = block
+shell-integration-features = no-cursor
