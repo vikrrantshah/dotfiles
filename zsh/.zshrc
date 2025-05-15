@@ -1,42 +1,23 @@
-### Oh My Zsh
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 
-export ZSH="$HOME/.oh-my-zsh"
+# JAVA
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-
-zstyle ':omz:update' mode auto
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-DISABLE_MAGIC_FUNCTIONS="true"
-
-plugins=(
-  git
-  zsh-autosuggestions
-)
-
-source $ZSH/oh-my-zsh.sh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-### Oh My Zsh
+# React-Native
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 ### Custom Aliases
 alias ls="ls -la"
 alias vim="nvim"
-alias v="nvim ."
 alias todocs="cd ~/Documents"
 alias toproj="cd ~/Documents/Personal/Projects"
 alias tosproj="cd ~/Documents/Personal/Side\ Projects/"
 alias tolab="cd ~/Documents/Personal/lab/"
-alias so-zrc="source ~/.zshrc"
 alias tms="sh ~/tmux-sessionizer/main.sh"
-alias szr="sh ~/.sessionizer/main.sh"
 ### Custom Aliases
 
 ### NVM
