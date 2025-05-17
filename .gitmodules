@@ -7,3 +7,6 @@
 [submodule "zsh/.omz-custom/themes/powerlevel10k"]
 	path = zsh/.omz-custom/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "nvim/.config/nvim"]
+	path = nvim/.config/nvim
+	url = https://github.com/vikrrantshah/nvim-config
