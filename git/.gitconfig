@@ -1,0 +1,62 @@
+[filter "lfs"]
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+[user]
+  name = Vikrant Shah
+  email = 60457380+vikrrantshah@users.noreply.github.com
+[core]
+  askpass = git-gui--askpass
+  editor = nvim
+[init]
+  defaultBranch = main
+[alias]
+  # Branch
+  b = branch
+  bD = branch -D
+  # Branch
+
+  # Checkout
+  co = checkout
+  cob = checkout -b
+  # Checkout
+
+  # Commit
+  c = commit
+  ca = commit -a
+  cam = commit --amend
+  cane = commit --amend --no-edit
+  # Commit
+
+  # Log
+  # One line short log
+  l = log --oneline --decorate --short
+  # Format: commitHash YYYY-MM-DD Commit Message [Author]
+  ll = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+  # Format: * commitHash  Commit Message. 4 weeks ago by Author
+  lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen%ar%Creset by %C(yellow)%an%Creset' --abbrev-commit
+  # Log
+
+  # Reset
+  r = reset
+  rh = git reset --hard
+  # Reset
+
+  # Status
+  s = status -s
+  # Status
+
+  # Others
+  pfwl = push --force-with-lease
+  la = "!git config -l | grep alias | cut -c 7-"
+  a = add .
+  # Others
+[color]
+  ui = true
+  diff = auto
+[diff]
+  # instead of using a and b notation
+  mnemonicprefix = true
+[push]
+  autoSetupRemote = true
