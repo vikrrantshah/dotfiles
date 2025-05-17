@@ -1,5 +1,6 @@
 font-family = Cascadia Code
 font-style = Bold
+font-size = 16
 theme = tokyonight_moon
 cursor-style = block
 shell-integration-features = no-cursor
