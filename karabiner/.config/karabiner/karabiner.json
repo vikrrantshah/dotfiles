@@ -8,6 +8,15 @@
               {
                 "description": "Change caps_lock to command+control+option+shift.",
                 "from": {
+                  "key_code": "escape",
+                  "modifiers": {}
+                },
+                "to": [{ "key_code": "caps_lock" }],
+                "type": "basic"
+              },
+              {
+                "description": "Change caps_lock to command+control+option+shift.",
+                "from": {
                   "key_code": "caps_lock",
                   "modifiers": {}
                 },
@@ -17,11 +26,7 @@
                     "modifiers": ["left_command", "left_control", "left_option"]
                   }
                 ],
-                "to_if_alone": [
-                  {
-                    "key_code": "escape"
-                  }
-                ],
+                "to_if_alone": [{ "key_code": "escape" }],
                 "type": "basic"
               },
               {
@@ -61,6 +66,25 @@
           }
         ]
       },
+      "devices": [
+        {
+          "identifiers": {
+            "is_keyboard": true,
+            "product_id": 45929,
+            "vendor_id": 1133
+          },
+          "simple_modifications": [
+            {
+              "from": { "key_code": "non_us_backslash" },
+              "to": [{ "key_code": "grave_accent_and_tilde" }]
+            },
+            {
+              "from": { "key_code": "grave_accent_and_tilde" },
+              "to": [{ "key_code": "non_us_backslash" }]
+            }
+          ]
+        }
+      ],
       "name": "Default profile",
       "selected": true,
       "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
