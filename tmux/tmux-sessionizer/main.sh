@@ -1,7 +1,17 @@
 #!/bin/bash
 
-declare PROJECTPATH=("$HOME/.dotfiles" "$HOME/Documents/SeDoMo/sedomo-apps" "$HOME/Documents/Personal/Projects/side-pdf")
-declare PROJECTS=("dotfiles" "sedomo" "side-pdf")
+declare PROJECTPATH=(
+  "$HOME/.dotfiles"
+  "$HOME/Documents/SeDoMo/sedomo-apps"
+  "$HOME/Documents/Personal/Projects/side-pdf"
+  "$HOME/Documents/Personal/Projects/personal-website"
+)
+declare PROJECTS=(
+  "dotfiles"
+  "sedomo"
+  "side-pdf"
+  "personal-website"
+)
 declare AVAILABLE=()
 declare AVAILABLEPATH=()
 
