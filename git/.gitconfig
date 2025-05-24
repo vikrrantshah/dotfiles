@@ -54,7 +54,7 @@
 # Rebase
 
 # Status
-  s = status -s
+  s = status --ignore-submodules -s -b
 # Status
 
 # Others
