@@ -12,23 +12,27 @@
 [init]
   defaultBranch = main
 [alias]
-  # Branch
+# Branch
   b = branch
-  bD = branch -D
-  # Branch
+  # Delete branch
+  bd = branch -d
+  # Delete remote branch
+  bdr = push -d
+# Branch
 
-  # Checkout
+# Checkout
   co = checkout
   cob = checkout -b
-  # Checkout
+# Checkout
 
-  # Commit
+# Commit
   c = commit
   ca = commit -a
   cam = commit --amend
   cane = commit --amend --no-edit
-  # Commit
-  # Log
+# Commit
+
+# Log
   # One line short log
   l = log --date=format:"%d-%m-%y" --pretty=format:"%C(yellow)%h\\ %C(reset)%<(61,trunc)%s\\ %C(auto)%d"
   # Custom long format
@@ -37,27 +41,32 @@
   lg = log --date=format:"%d-%m-%y" --pretty=format:"%C(yellow)%h\\ %C(reset)%<(60,trunc)%s\\ %C(auto)%d" --graph
   # Custom long format graph
   llg = log --graph --date=format:"%d-%m-%y" --pretty=format:"%C(yellow)%h\\ %C(green)%<(12,trunc)%ar\\ (%ad)\\ %C(magenta)%<(16,trunc)%cn\\ %C(reset)%<(60,trunc)%s\\ %C(auto)%d"
-  # Log
+# Log
 
-  # Reset
+# Reset
   r = reset
   rh = reset --hard
-  # Reset
+# Reset
+  
+# Rebase
+  rb = rebase
+  rbi = rebase -i
+# Rebase
 
-  # Status
+# Status
   s = status -s
-  # Status
+# Status
 
-  # Others
+# Others
   pfwl = push --force-with-lease
   la = "!git config -l | grep alias | cut -c 7-"
-  a = add .
-  # Others
+  a = add
+# Others
 [color]
   ui = true
   diff = auto
 [diff]
-  # instead of using a and b notation
+# instead of using a and b notation
   mnemonicprefix = true
 [push]
   autoSetupRemote = true
