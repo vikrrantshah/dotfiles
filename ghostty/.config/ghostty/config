@@ -4,3 +4,5 @@ font-size = 16
 theme = tokyonight_moon
 cursor-style = block
 shell-integration-features = no-cursor
+working-directory = /Users/vikrantshah/Documents
+quit-after-last-window-closed = true
