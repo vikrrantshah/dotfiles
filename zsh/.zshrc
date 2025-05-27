@@ -49,6 +49,7 @@ alias toproj="cd ~/Documents/Personal/Projects"
 alias tosproj="cd ~/Documents/Personal/Side\ Projects/"
 alias tolab="cd ~/Documents/Personal/lab/"
 alias tms="sh ~/tmux-sessionizer/main.sh"
+alias lg="lazygit"
 ### Custom Aliases
 
 ### NVM
