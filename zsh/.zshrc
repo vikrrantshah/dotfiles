@@ -50,6 +50,8 @@ alias tosproj="cd ~/Documents/Personal/Side\ Projects/"
 alias tolab="cd ~/Documents/Personal/lab/"
 alias tms="sh ~/tmux-sessionizer/main.sh"
 alias lg="lazygit"
+alias f="fzf -m --preview 'bat --color=always --style=numbers --line-range :500 {}'"
+alias bat="bat --color=always --style=numbers --line-range :500"
 ### Custom Aliases
 
 ### NVM
@@ -73,3 +75,6 @@ esac
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
