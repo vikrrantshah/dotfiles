@@ -2,11 +2,11 @@
 
 open -a Docker
 
-SESSION="sedomo"
+SESSION="arbio-web"
 SESSIONEXISTS=$(tmux list-sessions | grep $SESSION)
 
-CD_FRONTEND='cd housemeister-app'
-CD_BACKEND='cd housemeister-backend'
+CD_FRONTEND='cd web-client'
+CD_BACKEND='cd backend'
 
 if [ "$SESSIONEXISTS" = "" ]; then
   tmux new-session -d -s $SESSION
@@ -20,12 +20,12 @@ if [ "$SESSIONEXISTS" = "" ]; then
   tmux send-keys -t 'Backend' "$CD_BACKEND" C-m 'nvim' C-m
 
   # Frontend Server Window
-  tmux new-window -t $SESSION:2 -n 'Frontend-NIX'
-  tmux send-keys -t 'Frontend-NIX' "$CD_FRONTEND" C-m 'nix develop' C-m 'yarn dev' C-m
+  tmux new-window -t $SESSION:2 -n 'Web-Client Server'
+  tmux send-keys -t 'Web-Client Server' "$CD_FRONTEND" C-m 'npm run dev' C-m
 
   # Backend Server Window
-  tmux new-window -t $SESSION:3 -n 'Backend-NIX'
-  tmux send-keys -t 'Backend-NIX' "$CD_BACKEND" C-m 'nix develop' C-m 'docker compose up -d' C-m 'symfony serve' C-m
+  tmux new-window -t $SESSION:3 -n 'Backend Server'
+  tmux send-keys -t 'Backend Server' "$CD_BACKEND" C-m 'docker compose up -d' C-m 'docker compose stop app' C-m 'npm run start:dev' C-m
 
   # Shell Panes for both Frontend and Backend
   tmux new-window -t $SESSION:4 -n 'Shells'
