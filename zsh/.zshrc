@@ -78,3 +78,6 @@ esac
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+
+# Added by Windsurf
+export PATH="/Users/vikrantshah/.codeium/windsurf/bin:$PATH"

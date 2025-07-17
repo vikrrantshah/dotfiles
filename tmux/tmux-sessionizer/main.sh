@@ -2,12 +2,16 @@
 
 declare PROJECTPATH=(
   "$HOME/.dotfiles"
+  "$HOME/Documents/Arbio"
+  "$HOME/Documents/Arbio"
   "$HOME/Documents/SeDoMo/sedomo-apps"
   "$HOME/Documents/Personal/Projects/side-pdf"
   "$HOME/Documents/Personal/Projects/personal-website"
 )
 declare PROJECTS=(
   "dotfiles"
+  "arbio-web"
+  "arbio-nexus"
   "sedomo"
   "side-pdf"
   "personal-website"
