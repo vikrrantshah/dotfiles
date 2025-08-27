@@ -81,3 +81,5 @@ source <(fzf --zsh)
 
 # Added by Windsurf
 export PATH="/Users/vikrantshah/.codeium/windsurf/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql/bin:$PATH"
