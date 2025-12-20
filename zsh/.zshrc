@@ -65,13 +65,6 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 ### Go
 
-# pnpm
-export PNPM_HOME="/Users/vikrantshah/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -79,7 +72,4 @@ esac
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-# Added by Windsurf
-export PATH="/Users/vikrantshah/.codeium/windsurf/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="/opt/homebrew/opt/mysql/bin:$PATH"
+./machine-zshrc.sh
