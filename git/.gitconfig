@@ -52,6 +52,14 @@
   s = status --ignore-submodules -s -b
   # Status
 
+  # Town
+  t = town
+  tc = town continue
+  tss = town sync --stack
+  tsa = town sync --all
+  tsp = town set-parent
+  # Town
+
   # Others
   pfwl = push --force-with-lease
   la = "!git config -l | grep alias | cut -c 7-"
@@ -65,4 +73,5 @@
 [push]
   autoSetupRemote = true
 [rerere]
-	enabled = true
+  enabled = true
+  autoupdate = true
