@@ -50,6 +50,7 @@ alias tosproj="cd ~/Documents/Personal/Side\ Projects/"
 alias tolab="cd ~/Documents/Personal/lab/"
 alias tms="sh ~/tmux-sessionizer/main.sh"
 alias lg="lazygit"
+alias lz="lazydocker"
 alias f="fzf -m --preview 'bat --color=always --style=numbers --line-range :500 {}'"
 alias bat="bat --color=always --style=numbers --line-range :500"
 ### Custom Aliases
