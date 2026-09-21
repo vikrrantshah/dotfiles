@@ -72,12 +72,12 @@ export PATH=$PATH:$GOPATH/bin
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-./machine-zshrc.sh
+# ./machine-zshrc.sh
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
 
 # pnpm
-export PNPM_HOME="/Users/vikrant/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
