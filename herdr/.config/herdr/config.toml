@@ -1,0 +1,16 @@
+onboarding = false
+
+[theme]
+name = "tokyo-night"
+auto_switch = false
+
+[ui]
+status_indicators = "symbols"
+
+[ui.toast]
+delivery = "herdr"
+
+[experimental]
+# Replays recent pane output after a server restart. Stored in
+# session-history.json next to session.json; it can contain secrets.
+pane_history = true

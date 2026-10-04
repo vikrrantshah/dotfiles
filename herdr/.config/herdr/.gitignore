@@ -1,0 +1,5 @@
+# If stow folds ~/.config/herdr into this directory (fresh machine), herdr
+# writes sockets, logs, and session data here; keep them out of git.
+*
+!.gitignore
+!config.toml
