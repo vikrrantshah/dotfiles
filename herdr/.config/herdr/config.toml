@@ -4,8 +4,20 @@ onboarding = false
 name = "tokyo-night"
 auto_switch = false
 
+[keys]
+# Direct (prefix-free) chords; default prefix bindings kept as fallbacks.
+new_tab = ["prefix+c", "ctrl+t"]
+previous_tab = ["prefix+p", "ctrl+p"]
+next_tab = ["prefix+n", "ctrl+n"]
+previous_workspace = "ctrl+["
+next_workspace = "ctrl+]"
+new_workspace = ["prefix+shift+n", "ctrl+w"]
+rename_tab = ["prefix+shift+t", "ctrl+shift+t"]
+rename_workspace = ["prefix+shift+w", "ctrl+shift+w"]
+
 [ui]
 status_indicators = "symbols"
+copy_on_select = false
 
 [ui.toast]
 delivery = "herdr"
