@@ -27,6 +27,14 @@ type = "shell"
 command = 'tab=$("$HERDR_BIN_PATH" tab list --workspace "$HERDR_ACTIVE_WORKSPACE_ID" | jq -er ".result.tabs[-1].tab_id") && "$HERDR_BIN_PATH" tab focus "$tab"'
 description = "last tab"
 
+[[keys.command]]
+key = "ctrl+g"
+type = "popup"
+command = "lazygit"
+description = "run lazygit"
+width = "90%"
+height = "90%"
+
 [ui]
 status_indicators = "symbols"
 copy_on_select = false
