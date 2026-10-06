@@ -14,6 +14,18 @@ next_workspace = "ctrl+]"
 new_workspace = ["prefix+shift+n", "ctrl+w"]
 rename_tab = ["prefix+shift+t", "ctrl+shift+t"]
 rename_workspace = ["prefix+shift+w", "ctrl+shift+w"]
+switch_tab = [
+  "prefix+1..9",
+  "ctrl+1", "ctrl+2", "ctrl+3", "ctrl+4",
+  "ctrl+5", "ctrl+6", "ctrl+7", "ctrl+8",
+]
+
+# switch_tab's 9 means "tab 9", so ctrl+9 jumps to the last tab via the API.
+[[keys.command]]
+key = "ctrl+9"
+type = "shell"
+command = 'tab=$("$HERDR_BIN_PATH" tab list --workspace "$HERDR_ACTIVE_WORKSPACE_ID" | jq -er ".result.tabs[-1].tab_id") && "$HERDR_BIN_PATH" tab focus "$tab"'
+description = "last tab"
 
 [ui]
 status_indicators = "symbols"
