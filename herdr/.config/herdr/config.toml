@@ -14,6 +14,7 @@ next_workspace = "ctrl+]"
 new_workspace = ["prefix+shift+n", "ctrl+w"]
 rename_tab = ["prefix+shift+t", "ctrl+shift+t"]
 rename_workspace = ["prefix+shift+w", "ctrl+shift+w"]
+goto = ["prefix+g", "ctrl+f"]
 switch_tab = [
   "prefix+1..9",
   "ctrl+1", "ctrl+2", "ctrl+3", "ctrl+4",
