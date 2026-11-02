@@ -36,6 +36,14 @@ description = "run lazygit"
 width = "90%"
 height = "90%"
 
+[[keys.command]]
+key = "ctrl+i"
+type = "popup"
+command = "btop"
+description = "run btop"
+width = "90%"
+height = "90%"
+
 [ui]
 status_indicators = "symbols"
 copy_on_select = false
