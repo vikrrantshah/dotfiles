@@ -9,4 +9,4 @@
 	url = https://github.com/romkatv/powerlevel10k.git
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
-	url = https://github.com/vikrrantshah/nvim-config
+	url = https://github.com/vikrrantshah/nvim
