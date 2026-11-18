@@ -1,8 +1,8 @@
 [user]
   name = Vikrant Shah
   email = 60457380+vikrrantshah@users.noreply.github.com
+	signingkey = /Users/vikrantshah/.ssh/id_ed25519.pub
 [core]
-  askpass = git-gui--askpass
   editor = nvim
 [init]
   defaultBranch = main
@@ -72,6 +72,16 @@
   mnemonicprefix = true
 [push]
   autoSetupRemote = true
+[url "git@github.com:"]
+  pushInsteadOf = https://github.com/
 [rerere]
   enabled = true
   autoupdate = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = /Users/vikrantshah/.config/git/allowed_signers
