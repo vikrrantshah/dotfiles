@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Copy, do not symlink: launchd can skip symlinked plists at login.
+    cp ~/.config/herdr/launchd/dev.herdr.session-titles.plist ~/Library/LaunchAgents/
+    launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/dev.herdr.session-titles.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>dev.herdr.session-titles</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/python3</string>
+    <string>/Users/vikrantshah/.config/herdr/session-titles.py</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/opt/homebrew/bin:/usr/bin:/bin</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/herdr-session-titles.log</string>
+  <key>StandardOutPath</key>
+  <string>/tmp/herdr-session-titles.log</string>
+</dict>
+</plist>

@@ -5,9 +5,10 @@ name = "tokyo-night"
 auto_switch = false
 
 [keys]
+prefix = "ctrl+a"
 # Direct (prefix-free) chords; default prefix bindings kept as fallbacks.
 new_tab = ["prefix+c", "ctrl+t"]
-previous_tab = ["prefix+p", "ctrl+p"]
+previous_tab = ["prefix+p", "ctrl+b"]
 next_tab = ["prefix+n", "ctrl+n"]
 previous_workspace = "ctrl+["
 next_workspace = "ctrl+]"
@@ -47,9 +48,15 @@ height = "90%"
 [ui]
 status_indicators = "symbols"
 copy_on_select = false
+pane_gaps = false
+hide_tab_bar_when_single_tab = true
+redraw_on_focus_gained = false
+prompt_new_workspace_name = true
+sidebar_width = 36
 
 [ui.toast]
-delivery = "herdr"
+# Ghostty shows OSC 9/777 desktop notifications natively (desktop-notifications = true).
+delivery = "terminal"
 
 [experimental]
 # Replays recent pane output after a server restart. Stored in

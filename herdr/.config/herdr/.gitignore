@@ -3,3 +3,6 @@
 *
 !.gitignore
 !config.toml
+!session-titles.py
+!launchd/
+!launchd/*.plist
